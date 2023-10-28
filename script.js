@@ -5,6 +5,8 @@ const contactRouter = require("./Routes/contact");
 const signupRouter = require("./Routes/signup");
 const app = express();
 
+// to parse the form data that we get in req.body
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.set("view engine", "ejs");
 

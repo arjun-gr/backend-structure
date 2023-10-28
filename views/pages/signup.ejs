@@ -8,5 +8,12 @@
   <body>
     <%- include('../partials/header.ejs')%>
     <h1>Sign up</h1>
+
+    <form action="/signup/new" method="post">
+      <input type="text" name="email" placeholder="email" />
+      <input type="password" name="password" placeholder="password" />
+
+      <input type="submit" />
+    </form>
   </body>
 </html>

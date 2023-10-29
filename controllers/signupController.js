@@ -1,13 +1,16 @@
+const auth = require("../Routes/auth");
+
 function signupController(req, res) {
   res.render("pages/signup");
 }
 
 function newController(req, res) {
-  const { email, password } = req.body;
 
-  if (email.length === 0 || password.length === 0) {
-    return res.status(404).send("Bad request");
-  } else {
+  const {error} = auth(req.body);
+  if(error){
+    return res.status(404).send(error.details[0].message);
+  }
+   else {
     res.send(req.body);
   }
 }

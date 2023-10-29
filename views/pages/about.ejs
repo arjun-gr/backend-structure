@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
-  </head>
+  <%- include('../partials/head.ejs') %>
   <body>
     <%- include('../partials/header.ejs')%>
-    <h1>Welcome to about</h1>
+    <div class="container border my-5 rounded bg-body-secondary pb-5">
+      <h1 class="py-5 border-bottom">About GameCom!</h1>
+      <p>GameCom is your one-stop destination for all things gaming. Whether you're a casual player, a die-hard fan, or a curious newcomer, GameCom offers a vibrant space to connect, discuss, and stay informed about the gaming world.</p>
+     <h3>What we offer</h3>
+     <ul>
+      <li><span class="text-primary">Forums & Discussions: </span>  Engage in lively discussions about various game genres, platforms, updates, and strategies.</li>
+      <li><span class="text-primary">News & Updates: </span>  Stay informed with the latest news, releases, updates, and gaming trends.</li>
+      <li><span class="text-primary">Community Interactions: </span>  Connect with fellow gamers, share experiences, and make friends within the gaming community.</li>
+    </ul>
+
+      <div>
+        <h3>Our Vision</h3>
+        <p>At GameCom, our vision is to create an inclusive and diverse space where every gamer's voice matters. We aim to foster a supportive and engaging environment, encouraging passionate conversations, knowledge sharing, and the celebration of gaming culture.</p>
+      </div>
+
+      
+    <div>
+      <h3>Testimonials</h3>
+      <div class="container border rounded">
+
+        <h6 class="py-3 border-bottom">User Testimonial:</h6>
+        <p class="fst-italic py-0">"GameCom is a fantastic platform! I've met so many incredible gamers and had enlightening discussions. It's truly a hub for all things gaming."</p>
+
+        <h6 class="py-3 border-bottom">User Testimonial:</h6>
+        <p class="fst-italic py-0">"Finally, a community where my love for gaming is not just accepted but celebrated. GameCom is where I feel at home, discussing and learning from fellow gamers!" </p>
+      </div>
+      </div>
+      
+
+    </div>
+</div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
